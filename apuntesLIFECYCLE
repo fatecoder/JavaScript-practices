@@ -1,0 +1,32 @@
+# Lifecycle
+
+DOMcontentLoaded # loaded html //todas las tags
+
+load # images, styles, all
+
+beoforeunload/unload #leaving the page
+
+document.addEventListener("DOMContentLoaded", ready);
+
+//window.onunload
+
+ - MouseEvents
+
+ - Drag/Drop
+
+ - Keyboard
+
+ - Lifecycle
+
+# Promise
+//Read about it
+
+
+let promise = new Promise()
+
+reactjs # facebook echar un ojo
+angular
+vue.js
+backbone.js
+
+jquery

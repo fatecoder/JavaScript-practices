@@ -1,0 +1,88 @@
+Events
+
+click
+contextmenu //right click	
+mouseover/out
+mousedown/up
+mousemove
+
+keydown
+keyup
+
+submit
+focus
+
+DOMContetntLoaded
+
+=CSS=
+transitioned
+
+# Event Handler
+
+HTML attribute
+
+<img id="myImage" src= "" onclick="alert("imge clicked")">
+
+<script>
+  function say(message){
+    consol.log(message);
+  }
+
+  myImage.onclick = function(event) {
+    alert(event.currentTarget);
+	//clientX COORDENADA DONDE SE GENERó EL CLICK
+  };
+  myImage.onclick = say;
+
+  myImage.addEventListener(event, say);
+  //"click"
+  myImage.removeEeventListener(event, say);
+  
+  eventHandler(event) {
+    switch(event.type) {
+      case "mousedown":
+		alert();
+	  case "mouseup":
+		alert();
+    }
+  }
+
+  elem.addEventListener("mousedown","eventHandler");
+</script>
+
+
+HTML attribute onclick = ""
+DOM property elem.onclick = ""
+Method: elem.addEventListener(event, handler);
+
+event.target == element
+
+event.stopPropagation() # stop the move upwards
+event.stopImmediatePropagation();
+
+
+#EVENT DELEGATION
+
+function(event) {
+  let target = event.target;
+  if (target.tagName != "TD") {
+    return;
+  }
+}
+
+table.addEventListener("click", clickHandler);
+
+
+#EVENT ACTIONS
+
+<a href="/" onclick="return false">Click</a>
+
+function myHandler(event) {
+  event.preventDefault();
+}
+
+element.addEventListener("click", myHandler);
+
+if (event.defaultPrevented) {
+  //do something
+}

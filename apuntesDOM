@@ -1,0 +1,72 @@
+DOM
+
+Document Object Model
+
+			window
+document(DOM)	navigator(BOM)	Object(JavaScript)
+				screen			Array
+				location		Function
+				frames
+				history
+				XMLHTTPRequest
+
+function hello(){
+  alert("hello");
+}
+
+window.hello();
+window.alert();
+
+document.body.style.background = "red";
+CSSOM
+
+BOM
+HTML
+
+navigator.userAgent = "information"; //string que contiene información del navegador
+//LEER
+
+platform = MacIntel, x86, x64
+
+window.location.href = "google.com";
+
+document.childNodes //muestra todos lo hijos de un nodo
+
+for (let element in document.body.childNodes) {
+  console.log(element);
+}
+
+parentNode //da el nombre del nodo padre
+
+table.rows
+table.tHead
+table.tBody
+
+document.getElementById();
+document.getElementByName();
+
+document.querySelectorAll("ul > li:last-child"); //devuelve un array
+document.querySelector();
+
+myDiv.innerHTML ="";
+	.innerText ="";
+createTextNode("");
+appendChild();
+element.insertBefore();
+.replaceChild(node, oldChild);
+.append();
+.prepend();
+
+before
+<ol>
+prepend
+	<li>
+	<li>
+append
+</ol>
+after
+
+removeChild(node);
+remove(node); //remueve el nodo en sí, directamente
+
+document.write("<b>Bold text</b>");
